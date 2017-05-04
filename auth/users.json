@@ -1,0 +1,14 @@
+{
+    "users": {
+        "testuser": {
+            "email": "email@example.com",
+            "password": "74FE0096AA3C5C8DF06DC5071BE9A3DC9C67BEDF94F6622CF9C332F0BA1174AB",
+            "hint": "password"
+        },
+        "testuser2": {
+            "email": "email@example.com",
+            "password": "C5960A912F27FEA9302C048DA32FCABA0F019168B4472B291AF49E0C6F55E6D0",
+            "hint": "albatross"
+        }
+    }
+}
