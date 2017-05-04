@@ -17,7 +17,8 @@ if ($json === false) {
     echo "Hittade databas!\r\n";
     // Sätt in innehållet av users arrayen i users
     // Om användare finns, sätt $user till den arrayen
-    $user = (isset(json_decode($json)[$_GET['user']]) ? json_decode($json)[$_GET['user']] : false);
+    $decode = json_decode($json);
+    $user = (isset($decode['users'][$_GET['user']]) ? $decode['users'][$_GET['user']] : false);
     if ($user == false) {
         // Ge samma fel vid fel användarnamn eller lösenord
         echo "ERROR V3: Fel namn eller lösenord!\r\n";
