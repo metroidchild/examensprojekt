@@ -30,7 +30,7 @@ $salt = "!@^-.4"; // Varning, detta är inte en säker lösning, följ kryptogra
                   // hjälpsidor för att säkrare kryptera lösenord
 if (strtolower(hash("sha256", $salt+$_POST['password'])) != strtolower($user->{'password'})) {
     // Ge samma fel vid fel användarnamn eller lösenord
-    echo "ERROR V3: Fel namn eller lösenord!\r\n";
+    echo "ERROR V4: Fel namn eller lösenord!\r\n";
     exit;
 } else {
     // Användare är inloggad
