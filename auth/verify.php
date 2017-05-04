@@ -1,7 +1,7 @@
 <?php
 
 // Försäkra oss att både användarnamn och lösenord är tillgängliga
-if (!isset($_GET['user']) || !isset($_GET['password'])) {
+if (!isset($_POST['user']) || !isset($_POST['password'])) {
     echo "ERROR V1: Alla fält inte satta!\r\n";
     exit;
 }
@@ -18,7 +18,7 @@ if ($json === false) {
     // Sätt in innehållet av users arrayen i users
     // Om användare finns, sätt $user till den arrayen
     $decode = json_decode($json);
-    $user = $decode->{'users'}->{$_POST['user']};
+    $user = property_exists($decode->{'users'},$_POST['user']) ? $decode->{'users'}->{$_POST['user']} : false;
     if ($user == false) {
         // Ge samma fel vid fel användarnamn eller lösenord
         echo "ERROR V3: Fel namn eller lösenord!\r\n";
