@@ -21,8 +21,8 @@ if ($json === false) {
     // Om användare finns, sätt $user till den arrayen
     $decode = json_decode($json);
     var_dump($decode);
-    var_dump($decode['users']);
-    var_dump($decode['users'][$_GET['user']]);
+    var_dump($decode->{'users'});
+    var_dump($decode->{'users'}->{$_GET['user']});
     $user = (isset($decode['users'][$_GET['user']]) ? $decode['users'][$_GET['user']] : false);
     if ($user == false) {
         // Ge samma fel vid fel användarnamn eller lösenord
