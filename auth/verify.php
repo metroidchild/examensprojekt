@@ -18,7 +18,7 @@ if ($json === false) {
     // Sätt in innehållet av users arrayen i users
     // Om användare finns, sätt $user till den arrayen
     $decode = json_decode($json);
-    $user = (isset($decode->{'users'}->{$_POST['user']}) ? $decode->{'users'}->{$_POST['user']} : false);
+    $user = $decode->{'users'}->{$_POST['user']};
     if ($user == false) {
         // Ge samma fel vid fel användarnamn eller lösenord
         echo "ERROR V3: Fel namn eller lösenord!\r\n";
