@@ -29,7 +29,7 @@ if ($json === false) {
 // Salt för lösenord
 $salt = "!@^-.4"; // Varning, detta är inte en säker lösning, följ kryptografiska
                   // hjälpsidor för att säkrare kryptera lösenord
-if (strtolower(hash("sha256", $salt+$_GET['password'])) != strtolower($user->{'password'})) {
+if (strtolower(hash("sha256", $_GET['password']+$salt)) != strtolower($user->{'password'})) {
     // Ge samma fel vid fel användarnamn eller lösenord
     echo "ERROR V4: Fel namn eller lösenord!\r\n";
     exit;
