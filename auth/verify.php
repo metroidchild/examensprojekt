@@ -1,7 +1,7 @@
 <?php
 
 // Försäkra oss att både användarnamn och lösenord är tillgängliga
-if (!isset($_POST['user']) || !isset($_POST['password'])) {
+if (!isset($_GET['user']) || !isset($_GET['password'])) {
     echo "ERROR V1: Alla fält inte satta!\r\n";
     exit;
 }
@@ -18,7 +18,7 @@ if ($json === false) {
     // Sätt in innehållet av users arrayen i users
     // Om användare finns, sätt $user till den arrayen
     $decode = json_decode($json);
-    $user = property_exists($decode->{'users'},$_POST['user']) ? $decode->{'users'}->{$_POST['user']} : false;
+    $user = property_exists($decode->{'users'},$_GET['user']) ? $decode->{'users'}->{$_GET['user']} : false;
     if ($user == false) {
         // Ge samma fel vid fel användarnamn eller lösenord
         echo "ERROR V3: Fel namn eller lösenord!\r\n";
@@ -29,7 +29,7 @@ if ($json === false) {
 // Salt för lösenord
 $salt = "!@^-.4"; // Varning, detta är inte en säker lösning, följ kryptografiska
                   // hjälpsidor för att säkrare kryptera lösenord
-if (strtolower(hash("sha256", $salt+$_POST['password'])) != strtolower($user->{'password'})) {
+if (strtolower(hash("sha256", $salt+$_GET['password'])) != strtolower($user->{'password'})) {
     // Ge samma fel vid fel användarnamn eller lösenord
     echo "ERROR V4: Fel namn eller lösenord!\r\n";
     exit;
