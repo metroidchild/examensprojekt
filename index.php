@@ -13,12 +13,12 @@
 
 <h3>Hur man spelar</h3>
 <p>
-    Klicka <pre style="display:inline;margin:0;">Shift + Enter</pre> för att simulera ett spel utan inloggning.<br>
+    Klicka <code>Shift + Enter</code> för att simulera ett spel utan inloggning.<br>
     <br>
     Spela genom första banan (försök att ta den rosa stjärnan) och bli tillbakaskickad till login skärmen
 </p>
 <p>
-    Klicka <pre style="display:inline;margin:0;">F12 + Enter</pre> för att simulera en inloggning.<br>
+    Klicka <code>F12 + Enter</code> för att simulera en inloggning.<br>
     Alternativt logga in med användarnamn "testuser" och lösenord "password",<br>
     eller användarnamn "testuser2" och lösenord "albatross"<br>
     <br>
