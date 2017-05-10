@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+code {
+    padding: 1px;
+    background-color: #DDD;
+    margin: 0 5px 0 5px;
+}
+</style>
 </head>
 <body>
 
@@ -14,14 +21,14 @@
 <h3>Hur man spelar</h3>
 <p>
     Klicka <code>Shift + Enter</code> för att simulera ett spel utan inloggning.<br>
-    <br>
     Spela genom första banan (försök att ta den rosa stjärnan) och bli tillbakaskickad till login skärmen
 </p>
 <p>
     Klicka <code>F12 + Enter</code> för att simulera en inloggning.<br>
     Alternativt logga in med användarnamn "testuser" och lösenord "password",<br>
-    eller användarnamn "testuser2" och lösenord "albatross"<br>
-    <br>
+    eller användarnamn "testuser2" och lösenord "albatross"
+</p>
+<p>
     Försök igen att ta den rosa stjärnan och se att du nu tog dig till en ny bana,<br>
     det finns inget fint sätt att stänga av spelet, så kryssa bara ner det.
 </p>
