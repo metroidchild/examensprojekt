@@ -7,7 +7,7 @@
 <form method="get" action="DRMworld.exe">
 <button type="submit">Ladda ner DRMworld här</button>
 </form>
-<form method="get" action="DRMworld.exe">
+<form method="get" action="DRMworld.gmz">
 <button type="submit">Källkod som GameMaker: Studio projekt</button>
 </form>
 
