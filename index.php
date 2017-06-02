@@ -17,8 +17,11 @@ code {
 <form method="get" action="DRMworld.gmz">
 <button type="submit">Källkod som GameMaker: Studio projekt</button>
 </form>
-<form method="get" action="report/Examensarbete.docx">
+<form method="get" action="report/Examensarbete\ rev2.docx">
 <button type="submit">Rapport</button>
+</form>
+<form method="get" action="report/Examensarbete.docx">
+<button type="submit">(Rapport gammal)</button>
 </form>
 <p>Du kan alternativt titta på hela projektet genom att gå till <a href="https://github.com/metroidchild/examensprojekt">github sidan</a></p>
 <br>

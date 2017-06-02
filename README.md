@@ -7,4 +7,4 @@ Eftersom att vem som helst kan kolla på datan i repot kommer "användarna" bara
 
 Sidan finns på [herokuapp](https://examensprojekt.herokuapp.com/)
 
-Rapporten finns [här](https://github.com/metroidchild/examensprojekt/blob/master/report/Examensarbete.docx)
+Rapporten finns [här](https://github.com/metroidchild/examensprojekt/blob/master/report/Examensarbete%20rev2.docx)
