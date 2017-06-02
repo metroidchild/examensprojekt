@@ -17,7 +17,7 @@ code {
 <form method="get" action="DRMworld.gmz">
 <button type="submit">Källkod som GameMaker: Studio projekt</button>
 </form>
-<form method="get" action="report/Examensarbete\ rev2.docx">
+<form method="get" action="report/Examensarbete%20rev2.docx">
 <button type="submit">Rapport</button>
 </form>
 <form method="get" action="report/Examensarbete.docx">
